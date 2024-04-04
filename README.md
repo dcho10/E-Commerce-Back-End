@@ -29,8 +29,10 @@ Some challenges I experienced include: Establishing relationships between tables
     
 ## Installation
 
-  dotenv@8.2.0  express@4.17.1  mysql2@2.1.0  sequelize@5.21.7
-
+  dotenv@8.2.0  
+  express@4.17.1  
+  mysql2@2.1.0  
+  sequelize@5.21.7
 
 ## Usage
 
