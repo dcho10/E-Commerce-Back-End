@@ -25,6 +25,7 @@ router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
+    // Used req.params.id to target the specific id
     const categoryData = await Category.findByPk(req.params.id, {
       include: [
         { 
@@ -60,6 +61,7 @@ router.put('/:id', async (req, res) => {
   try {
     const categoryData = await Category.update(req.body, {
       where: {
+        // Used req.params.id to target the specific id
         id: req.params.id,
       },
     });
@@ -78,6 +80,7 @@ router.delete('/:id', async (req, res) => {
   try {
     const categoryData = await Category.destroy({
       where: {
+        // Used req.params.id to target the specific id
         id: req.params.id,
       },
     });

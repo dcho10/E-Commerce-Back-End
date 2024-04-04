@@ -58,6 +58,7 @@ router.put('/:id', async (req, res) => {
   try {
     const tagData = await Tag.update(req.body, {
       where: {
+        // Used req.params.id to target the specific id
         id: req.params.id,
       },
     });
@@ -76,6 +77,7 @@ router.delete('/:id', async (req, res) => {
   try {
     const tagData = await Tag.destroy({
       where: {
+        // Used req.params.id to target the specific id
         id: req.params.id,
       },
     });
