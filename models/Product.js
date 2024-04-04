@@ -23,6 +23,7 @@ Product.init(
       allowNull: false,
     },
 
+    // Validation: https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
@@ -30,7 +31,8 @@ Product.init(
         isDecimal: true,
       },
     },
-
+    
+    // Validation: https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,

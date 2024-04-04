@@ -19,6 +19,7 @@ Category.hasMany(Product, {
 
 // Products belongToMany Tags (through ProductTag)
 
+// belongsToMany: https://sequelize.org/docs/v7/associations/belongs-to-many/
 Product.belongsToMany(Tag, {
   through: {
     model: ProductTag,
@@ -30,6 +31,7 @@ Product.belongsToMany(Tag, {
 
 // Tags belongToMany Products (through ProductTag)
 
+// belongsToMany: https://sequelize.org/docs/v7/associations/belongs-to-many/
 Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
